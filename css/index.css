@@ -1,0 +1,317 @@
+@font-face {
+    font-family: Rubik-SemiBold;
+    src: url('../fonts/Rubik-Regular.ttf');
+ }
+body{
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family: Rubik-SemiBold;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(231, 231, 231, 0.438);
+}
+#tudo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#menu{
+    left: 20%;
+    width: 17%;
+    display: block;
+    font-weight: bold;
+    margin-top:60px;
+    position:fixed;
+}
+#menu::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(231, 231, 231, 0.438);
+}
+#conteudo{
+    right: 0;
+    display: block;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#sub_menu2{
+    display: block;
+    font-size: 18px;
+}
+#for_you{
+    color: rgb(235, 41, 79);
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+#for_you:hover{
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+#for_you_negrito{
+    color:black;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+#for_you_negrito:hover{
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+#avatar_user{
+    border-radius: 35px;
+    width: 80px;
+    height: 80px;
+}
+#videoPlayer{
+    width: 100%;
+    height: 100%;
+}
+#video_tumbnail{
+    position: relative;
+    border-radius: 5px;
+    width: 300px;
+    height: 550px;
+    background-color: black;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#username_user{
+    margin-bottom: 20px;
+    position: absolute;
+}
+#description_video{
+    position: absolute;
+    margin-top: 30px;
+    font-weight: none;
+}
+#music_video{
+    position: absolute;
+    margin-top: 82px;
+    font-weight: none;
+    font-size: 13px;
+}
+#traco_vertical{
+    background-color: rgb(214, 214, 214);
+    height: 100%;
+    width: 1px;
+    left: 0;
+    margin-left: 55px;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 25px rgba(211, 211, 211, 0.507);
+}
+#text_login{
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 16px;
+    line-height: 22px;
+}
+#login_menu{
+    display: block;
+    margin-top: 20px;
+}
+#entrar{
+    margin-top: 20px;
+    width: 100%;
+    height: 47px;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(254, 44, 85, 1.0);
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgba(254, 44, 85, 1.0);
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#entrar:hover{
+    background-color: rgb(241, 226, 230);
+}
+#time{
+    color: rgba(255, 255, 255, 0.534);
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    font-size: 10px;
+}
+#play{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#pause{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: block;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#progress {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+    background-color: rgba(134, 134, 134, 0.534);
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#progress_atual {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+}
+#progress_bolinha {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    margin-top: -4px;
+}
+#volume{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    display: block;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#muted{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    display: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#volume_painel {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    width: 30px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: rgba(189, 189, 189, 0.541);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+}
+#volume_control {
+    position: absolute;
+    bottom: 12px;
+    left: 14px;
+    width: 3px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#volume_atual {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#volume_bolinha {
+    position: absolute;
+    top:0;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    margin-left: -3px;
+}
+#control_menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+#conteudos{
+    width:42%;
+    display: block;
+    position: relative;
+    margin-top:60px;
+    left: 10%;
+}
+
+@media ( max-width: 1100px ){
+    #pesquisa{
+        display: none;
+    }
+    #load {
+        margin-left: 30px;
+    }
+    #tres{
+        margin-left: -10px;
+    }
+    #hover_menu_text{
+        display: none;
+    }
+    #menu{
+        position: fixed;
+        left: 0;
+        width: 40px;
+    }
+    #sub_menu2{
+        margin: 5px;
+    }
+    #traco_vertical{
+        display: block;
+    }
+    #conteudos{
+        position: relative;
+        left: 0;
+        margin-left: -155px;
+    }
+    #username_user {
+        width: 250px;
+    }
+    #description_video{
+        max-width: 15ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #music_video{
+        max-width: 40ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: -50px;
+    }
+    #login_menu{
+        display: none;
+    }
+    #video_tumbnail{
+        margin-left: 15px;
+    }
+    #header{
+        left: 15%;
+    }
+    @media ( max-width: 600px ){#header{left: 0;}#load {margin-left: 0;}}
+}
